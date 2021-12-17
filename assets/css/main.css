@@ -1,0 +1,273 @@
+﻿
+
+@import url(variable.css);
+
+@import url(reset.css);
+
+
+header, nav {
+    background: var(--rich-black-fogra-29);
+}
+
+.navbar,
+.banner{
+    padding: 0 var(--px);
+}
+
+/* MAIN */
+
+.container{
+    max-width: 1440px;
+    margin: auto;
+}
+
+.navbar{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-menu-btn{
+    display: none
+}
+
+.navbar-brand{
+    width: 90px;
+    height: 50px;
+}
+
+nav{
+    margin-right: 200px;
+}
+
+.navbar-nav{
+    display: flex;
+}
+
+.navbar-nav li:not(:last-child){
+    margin-right: 60px;
+}
+
+.navbar-link{
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-5);
+}
+
+.navbar-link:hover{
+    color: var(--light-azure);
+}
+
+.indicator{
+    position: relative;
+}
+
+.indicator::after{
+    content: '';
+    background: var(--live-indicator);
+    position: absolute;
+    top: calc(50% - 1px);
+    right: -15px;
+    width: 4px;
+    height: 4px;
+    box-shadow: 0 0 0 2px var(--live-indicator-shadow);
+    border-radius: 5px;
+}
+
+.navbar-search-btn ion-icon{
+    font-size: 20px;
+    color: var(--light-azure);
+    --ionicon-stroke-width: 50px;
+}
+
+.navbar-search-btn{
+    display: none;
+}
+
+.navbar-signin{
+    display: flex;
+    align-items: center;
+    font-size: var(--fs-sm);
+}
+
+.navbar-signin ion-icon{
+    font-size: 22px;
+    color: var(--light-azure);
+    margin-left: 5px;
+    --ionicon-stroke-width: 30px;
+}
+
+.navbar-signin:hover span{
+    color: var(--light-azure);
+}
+
+
+/* BANNER */
+
+.banner{
+    margin-bottom: 60px;
+}
+
+.banner-card{
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.banner-img{
+    object-position: top;
+}
+
+.banner-card:hover .banner-img{
+    transform: scale(1.1);
+}
+
+.banner-card .card-content{
+    position: absolute;
+    right: 80px;
+    bottom: 60px;
+    left: 80px;
+}
+
+.banner-card .card-info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.banner-card .card-info div {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.banner-card .card-info ion-icon {
+    font-size: 20px;
+    color: var(--azure);
+    margin-right: 5px;
+}
+
+.banner-card .card-info span{
+    font-weight: var(--fw-6);
+}
+
+.banner-card .card-info .quality{
+    background: var(--azure);
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-weight: var(--fw-7);
+}
+
+.banner-card .title{
+    font-size: 3em;
+    color: var(--white);
+    text-shadow: 2px 0 #0007;
+}
+
+.movies{
+    padding-bottom: 35px;
+}
+
+.subscribe-box {
+    top: 25%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, 50%);
+    background: var(--oxford-blue);
+    padding: 60px 40px;
+    width: 500px;
+    height: 350px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.subscribe-box h1{
+    font-size: 36px;
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+.subscribe-box span{
+    color: var(--white);
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.subscribe-box hr {
+    width: 70px;
+    color: var(--white);
+    margin: 25px auto;
+}
+
+.subscribe-box input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #00ff90;
+    border-radius: 5px;
+    outline-color: white;
+    margin-bottom: 25px;
+}
+
+ .subscribe-box form > button {
+        width: 100%;
+        padding: 15px 20px;
+        border: 0;
+        background: var(--white);
+        color: var(--oxford-blue);
+        font-size: 18px;
+        font-weight: 700;
+        transition: .3s;
+        border-radius: 5px;
+ }
+
+ .subscribe-box button:hover {
+        background: var(--light-azure);
+        color: var(--white);
+ }
+
+.footer {
+    height: 100px;
+    display: flex;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.footer a {
+        display: inline;
+}
+
+.banner1{
+    padding-top: 100px;
+}
+
+#img1 {
+    float: left;
+    height: 350px;
+    width: 250px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.foot{
+    padding-top: 700px;
+}
+
+#img2 {
+    float: right;
+    height: 350px;
+    width: 250px;
+    margin-top: 30px;
+    margin-right: 20px;
+    position: relative;
+}
+
+p {
+    font-family: Sitka Subheading;
+    font-size: 16px;
+    padding: 10px;
+    text-align: justify;
+    color: white;
+}

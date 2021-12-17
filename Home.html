@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Movie Trailers</title>
+
+
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link rel="stylesheet" href="assets/css/media.css"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900"
+          rel="stylesheet"/>
+</head>
+<body>
+
+
+    <div class="container">
+        <header>
+            <div class="navbar">
+                <button class="navbar-menu-btn">
+                    <span></span><span></span><span></span>
+                </button>
+
+                <a href="#" class="navbar-brand">
+                    <img src="assets/images/logo.jpg" alt=""/>
+                </a>
+
+                <!-- navbar navigation -->
+                <nav>
+                    <ul class="navbar-nav">
+                        <li> <a href="Home.html" class="navbar-link">Home</a></li>
+                        <li> <a href="Scheda.html" class="navbar-link">Scheda</a></li>
+                        <li> <a href="#news"  class="navbar-link indicator">News</a></li>
+                    </ul>
+                </nav>
+
+                <button class="navbar-search-btn">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+
+                <!-- For small device -->
+                <a href="#" class="navbar-signin">
+                    <span>Sign in</span>
+                    <ion-icon name="log-in-outline"></ion-icon>
+                </a>
+            </div>
+        </header>
+
+
+        <main>
+
+            <!-- BANNER -->
+
+            <section class="banner">
+                <div class="banner-card">
+                    <img src="assets/images/john-wick-3.jpeg" class="banner-img" alt=""/>
+
+                    <div class="card-content">
+                        <div class="card-info">
+                            <div class="genre">
+                                <ion-icon name="film"></ion-icon>
+                                <span>Action/Thriller</span>
+                            </div>
+
+                            <div class="year">
+                                <ion-icon name="calendar"></ion-icon>
+                                <span>2019</span>
+                            </div>
+
+                            <div class="duration">
+                                <ion-icon name="time"></ion-icon>
+                                <span>2h11m</span>
+                            </div>
+
+                            <div class="quality">4K</div>
+
+                        </div>
+
+                        <h2 class="card-title">John Wick: Chapter 3 - Parabellum</h2>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="movies">
+                <div class="subscribe-box">
+                    <h1>Subscribe now</h1>
+                    <span>Get notified about the next update</span>
+                    <hr />
+                    <form action="#">
+                        <input type="email" name="email_address" placeholder="Email Address"/>
+                        <button type="submit" href="#news">Subscribe</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+       
+        <footer>
+            <div class="footer">
+                <p>
+                    &copy; Movie Trailers | <a target="_blank" href="https://www.instagram.com/paradisehotel/">Instagram | </a>
+                    <a target="_blank" href="https://www.facebook.com/ParadiseHotel/">Facebook</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/media.js"></script>
+
+    <script type="module" src ="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src ="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
